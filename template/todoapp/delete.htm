@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+<style>
+	body{
+		background-image: linear-gradient(120deg,#6d6d6d,#555333);
+	}
+	h3{
+		text-align: center;
+		margin: 25px;
+	}
+	.center-box{
+		width:600px;
+		margin: 20px auto;
+		padding:20px;
+		background-color: #fff;
+		border-radius: 10px;
+	}
+	</style>
+<div class="center-box">
+	<h3>Are you sure you want to delete "{{item}}"?<h3>
+
+	<a class="btn btn-sm btn-danger" href="{% url 'index' %}" >Cancel</a>
+	<br>
+	<form method="POST" action="">
+		{% csrf_token %}
+		<input class="btn btn-info" type="submit" name="Confirm">
+	</form>
+</div>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+        <style>
+            body{
+                background-image:linear-gradient(120deg,rgb(142, 177, 241),rgb(48, 95, 180)) ;
+            }
+            .center-column{
+                width:600px;
+                margin: 20px auto;
+                padding:20px;
+                background-color: #fff;
+                border-radius: 10px;    
+            }
+            h3{
+                text-align: center;    
+            }
+        </style>
+    <body>
+        
+        <div class="center-column">
+            <h3>Update Task</h3>
+            <form method="POST" action="">
+                <div class="item-row"></div>
+                    {%csrf_token%}
+                    {{form}}
+                    <input class="btn btn-info" type="submit" name="Update Task">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
