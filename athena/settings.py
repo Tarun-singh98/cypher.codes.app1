@@ -18,7 +18,7 @@ TEMPLATE_DIR=os.path.join(BASE_DIR,'template')
 
 
 
-STATIC_DIR=os.path.join(BASE_DIR,'static')
+
 STATIC_URL='/static/'
 
 # Quick-start development settings - unsuitable for production
@@ -127,4 +127,4 @@ USE_TZ = True
 STATIC_ROOT=os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS=[STATIC_DIR,]
+
